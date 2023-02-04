@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!-- create webpage title-->
+    <title>@ViewData["Title"]</title>
+
+    <!-- add an icon for the website-->
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon" />
+
+    <!-- bring bootstrap in-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- link css -->
+    <link href="~/css/Main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- link js bootstrap and jquery -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+
+    <script src="~/js/GradeCalc.js"></script>
+</body>
+</html>

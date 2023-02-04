@@ -20,18 +20,18 @@ img {
 }
 
 p {
-    
+    color: white;
     display: table;
     background: palevioletred;
     text-align: center;
     vertical-align: middle;
-    align-items: center;
-   
+    align-items: center;  
 }
 
-div {
+form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f8f9f0;
     color: palevioletred;
-    font-size:20px;
-    font-weight:400;
 }
+
 
